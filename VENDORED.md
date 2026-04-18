@@ -46,7 +46,7 @@ Skipped from sebdelsol's collection:
 - `2-filemanager-titlebar.lua` — conflicts with ProjectTitle's title bar
 - `2-reference-page-count.lua`, `2-screensaver-cover.lua` — not wanted
 
-## Minimalist setup (Reddit u/——)
+## Minimalist setup (Reddit u/No_Cardiologist_9440)
 
 - **Source:** https://www.reddit.com/r/koreader/comments/1op2mrq/my_minimalistic_setup/
 - **License:** not stated — treat as CC-BY for the intent, reimplemented independently
