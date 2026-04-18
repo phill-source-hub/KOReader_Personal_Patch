@@ -48,14 +48,14 @@ The `patches/` folder contains 13 `.lua` files. KOReader loads them in lexicogra
 | 1st (`2--` prefix) | `2--disable-all-PT-widgets.lua` | SeriousHornet | **Prerequisite** — strips PT's default overlays so VOS has a clean canvas |
 | 2nd | `2--stretched-rounded-covers.lua` | SeriousHornet | 2:3 stretched covers + SVG rounded corners |
 | 3rd (`2-` prefix, alpha) | `2-menu-size.lua` | sebdelsol | DPI-aware menu sizing |
-| 4th | `2-minimalist-pt-tweaks.lua` | **ours** | Hides row dividers, footer separator, and title-bar underline |
+| 4th | `2-minimalist-pt-tweaks.lua` | **phill-source-hub** | Hides row dividers, footer separator, and title-bar underline |
 | 5th | `2-new-progress-bar.lua` | SeriousHornet | Rounded progress bar (skips finished books automatically) |
 | 6th | `2-rounded-folder-covers.lua` | SeriousHornet | Rounded folder covers, `.cover.jpg` support, file-count badge |
 | 7th | `2-screensaver-chapter.lua` | sebdelsol | `%C` / `%P` tokens in sleep-screen message |
 | 8th | `2-series-badge-numbered.lua` | SeriousHornet | Rounded `#N` badge on series books |
 | 9th | `2-update-patches.lua` | sebdelsol | Auto-updater for sebdelsol's upstream |
-| 10th | `2-update-phill-patches.lua` | **ours** | Auto-updater for this repo |
-| 11th (`2-z-` prefix) | `2-z-finished-checkmark.lua` | **ours** | Check icon on finished books (loads after progress bar so it layers on top) |
+| 10th | `2-update-phill-patches.lua` | **phill-source-hub** | Auto-updater for this repo |
+| 11th (`2-z-` prefix) | `2-z-finished-checkmark.lua` | **phill-source-hub** | Check icon on finished books (loads after progress bar so it layers on top) |
 | 12th (`20-` prefix) | `20-faded-finished-books.lua` | SeriousHornet | Dims finished covers to 50% |
 
 ### Why the odd prefixes?

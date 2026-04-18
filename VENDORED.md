@@ -56,7 +56,7 @@ The original minimalist setup shipped as plugin-file drops (modified `mosaicmenu
 - The "no row dividers / no footer line / no title-bar underline" behaviour is reimplemented as the proper user-patch `patches/2-minimalist-pt-tweaks.lua` so it survives ProjectTitle updates.
 - The "finished books get a marker" behaviour is reimplemented as `patches/2-z-finished-checkmark.lua`, using a check icon rather than the original trophy, and hooking into the post-VOS paint chain.
 
-## First-party (ours)
+## First-party (phill-source-hub)
 
 - `patches/2-minimalist-pt-tweaks.lua` — MIT
 - `patches/2-z-finished-checkmark.lua` — MIT

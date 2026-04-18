@@ -23,7 +23,7 @@ The `icons/mdlight/` subfolder in the repo exists purely for organisational sepa
   - `2-menu-size.lua`
   - `2-screensaver-chapter.lua`
   - `2-update-patches.lua`
-- **First-party** (MIT):
+- **First-party from phill-source-hub** (MIT):
   - `2-minimalist-pt-tweaks.lua` — scoped replacement for the Reddit minimalist setup's plugin-file overrides
   - `2-z-finished-checkmark.lua` — rewrite of the minimalist trophy patch, now uses `check.svg` and coexists with the VOS progress bar
   - `2-update-phill-patches.lua` — sibling auto-updater for this repo
