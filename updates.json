@@ -12,5 +12,15 @@
   "2-z-finished-checkmark.lua": "126a8b28541041b5901b5cb1bcd089de",
   "20-faded-finished-books.lua": "86038dd4dbd904fd89668dcfb5ca1ed2",
   "guard.lua": "921a0e744e6a182c95e8840ad4ce09e4",
-  "check.svg": "979388b24e4a90a22499d012b9e45f06"
+  "check.svg": "979388b24e4a90a22499d012b9e45f06",
+  "favorites.svg": "cdd85df5edc1fff21216060ba7d312d5",
+  "go_up.svg": "56128c1c0663ccea1a1d1a1d16631b16",
+  "hero.svg": "f09536c62e05d7b7bd965c39089a8fc3",
+  "history.svg": "6ee83e2817d98d7d66ab66e389f8becd",
+  "last_document.svg": "1c1eafaf02153a6b8979c8ca1f181cdc",
+  "plus.svg": "eba1bf83ab65b3e18d75bfe904b66495",
+  "rounded.corner.bl.svg": "540631fcc4149219eeb7dbf2f278ce5a",
+  "rounded.corner.br.svg": "608eb9664c9b259bcd5dc1dc1288b4b7",
+  "rounded.corner.tl.svg": "4c4052e65bdfde2fad8e06c96f9141f1",
+  "rounded.corner.tr.svg": "7059b9b19a94e34c5d4f4cdd1b41c140"
 }
