@@ -1,0 +1,16 @@
+{
+  "2--disable-all-PT-widgets.lua": "c1251038a143d6753dd1649b7be9a2db",
+  "2--stretched-rounded-covers.lua": "75f1f35fa98fa796890cc3469dfc1e60",
+  "2-menu-size.lua": "e6711e57a5fa5a870978db4fd76e79af",
+  "2-minimalist-pt-tweaks.lua": "87d6d8fa25738ef1b3494a8d3c302113",
+  "2-new-progress-bar.lua": "0248a5dd47f16b6ba63e28cca3be2cf2",
+  "2-rounded-folder-covers.lua": "b8fe48b8bd5744224d8b408425a18b43",
+  "2-screensaver-chapter.lua": "ec0df85e78b0aeae6fdf441fcc8039db",
+  "2-series-badge-numbered.lua": "ad9313cee5dcb680c2d4acb1b326ba24",
+  "2-update-patches.lua": "371908d09ae7732507703b5e9f6233be",
+  "2-update-phill-patches.lua": "3d8312913a583e22f1cddde904ae55f9",
+  "2-z-finished-checkmark.lua": "126a8b28541041b5901b5cb1bcd089de",
+  "20-faded-finished-books.lua": "86038dd4dbd904fd89668dcfb5ca1ed2",
+  "guard.lua": "921a0e744e6a182c95e8840ad4ce09e4",
+  "check.svg": "979388b24e4a90a22499d012b9e45f06"
+}
