@@ -1,0 +1,4 @@
+# Drop minimalist mdlight SVG overrides here.
+# At install time they will be copied to /koreader/icons/ (the override layer),
+# NOT to /koreader/resources/icons/mdlight/ (the system layer).
+# See ../../icons_needed.md for details.

@@ -102,6 +102,17 @@ KOReader_Personal_Patch/
 
 ---
 
+## Things you still need to supply
+
+Two things are deliberately **not** shipped in this repo because of licensing and size:
+
+1. **The rounded-corner SVGs and the minimalist top-icon SVGs**. See `icons_needed.md` for the full list and where to grab them.
+2. **The Montserrat font family**. See `fonts_needed.md`.
+
+The deploy script will warn you if any of these are missing from the staging folders at install time.
+
+---
+
 ## Maintenance workflow
 
 ### Normal operation (you want to update everything)
