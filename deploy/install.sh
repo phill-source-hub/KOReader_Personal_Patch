@@ -101,12 +101,26 @@ for f in "$REPO_ROOT"/icons/*.svg; do
     copy_with_backup "$f" "$TARGET/icons/$(basename "$f")"
 done
 
-# 3. Icons (mdlight subdir)
+# 3. mdlight icon OVERRIDES
+# -------------------------
+# KOReader ships a stock icon theme at /koreader/resources/icons/mdlight/.
+# Any file with the same name in /koreader/icons/ takes priority over the
+# stock version. We install mdlight icons to the OVERRIDE layer so stock
+# icons are never touched — uninstalling cleanly restores the stock look.
+#
+# We keep a separate icons/mdlight/ folder in the repo purely for
+# organisational clarity (so the icons that came from the minimalist
+# bundle don't get mixed up with patch-specific ones like check.svg).
 if [[ -d "$REPO_ROOT/icons/mdlight" ]]; then
-    echo "Installing mdlight icons..."
-    mkdir -p "$TARGET/resources/icons/mdlight"
+    echo "Installing mdlight icon overrides -> /koreader/icons/ ..."
     for f in "$REPO_ROOT"/icons/mdlight/*.svg; do
-        copy_with_backup "$f" "$TARGET/resources/icons/mdlight/$(basename "$f")"
+        [[ -f "$f" ]] || continue
+        name="$(basename "$f")"
+        # Collision check: did icons/*.svg in step 2 install a same-named file?
+        if [[ -f "$REPO_ROOT/icons/$name" ]]; then
+            echo "  ⚠ Name collision: $name exists in BOTH icons/ and icons/mdlight/ — mdlight copy will win"
+        fi
+        copy_with_backup "$f" "$TARGET/icons/$name"
     done
 fi
 

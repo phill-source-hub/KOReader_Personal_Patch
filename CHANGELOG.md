@@ -4,6 +4,12 @@
 
 Initial consolidation. All patches installed simultaneously for the first time on a Kindle Paperwhite (7th gen) running KOReader 2026.03 with ProjectTitle.
 
+### Icon-install convention
+
+`icons/mdlight/*.svg` in this repo is deployed to `/koreader/icons/` on the device (the **override layer**), NOT to `/koreader/resources/icons/mdlight/` (the system layer). This is per KOReader's recommended convention — the stock icon theme is never touched, so uninstalling cleanly reverts to stock.
+
+The `icons/mdlight/` subfolder in the repo exists purely for organisational separation: it keeps the ~100 minimalist theme overrides distinct from patch-required icons like `check.svg`. On-device they all share the same destination.
+
 ### Added
 - **Vendored from SeriousHornet/KOReader.patches** (GPL-3.0):
   - `2--disable-all-PT-widgets.lua`

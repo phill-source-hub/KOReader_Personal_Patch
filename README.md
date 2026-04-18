@@ -87,7 +87,11 @@ KOReader_Personal_Patch/
 │   ├── 2-z-finished-checkmark.lua
 │   └── 20-faded-finished-books.lua
 ├── icons/                          # → copies to /koreader/icons/
-│   └── check.svg
+│   ├── check.svg                   #   patch-specific icons (shipped)
+│   ├── rounded.corner.*.svg        #   VOS rounded corners (you supply)
+│   ├── favorites.svg, go_up.svg …  #   PT top-bar icons (you supply)
+│   └── mdlight/                    # → ALSO copies to /koreader/icons/
+│       └── *.svg                   #   stock-theme overrides (optional)
 ├── icons_needed.md                 # list of additional icons you must drop in
 ├── fonts_needed.md                 # list of fonts you must drop in
 └── deploy/
@@ -95,17 +99,6 @@ KOReader_Personal_Patch/
     ├── install.ps1                 # Windows deploy
     └── uninstall.sh                # rollback
 ```
-
----
-
-## Things you still need to supply
-
-Two things are deliberately **not** shipped in this repo because of licensing and size:
-
-1. **The rounded-corner SVGs and the minimalist top-icon SVGs**. See `icons_needed.md` for the full list and where to grab them.
-2. **The Montserrat font family**. See `fonts_needed.md`.
-
-The deploy script will warn you if any of these are missing from the staging folders at install time.
 
 ---
 

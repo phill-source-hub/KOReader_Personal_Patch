@@ -86,13 +86,20 @@ Get-ChildItem -Path (Join-Path $RepoRoot 'icons') -Filter '*.svg' -ErrorAction S
     Copy-WithBackup $_.FullName (Join-Path $Target "icons\$($_.Name)")
 }
 
-# 3. Icons (mdlight subdir)
+# 3. mdlight icon OVERRIDES
+# KOReader ships a stock theme at /koreader/resources/icons/mdlight/.
+# Files in /koreader/icons/ override them. Installing to the override
+# layer means uninstalling cleanly restores the stock look.
 $mdlightSrc = Join-Path $RepoRoot 'icons\mdlight'
 if (Test-Path $mdlightSrc) {
-    Write-Host "Installing mdlight icons..."
-    New-Item -ItemType Directory -Force -Path (Join-Path $Target 'resources\icons\mdlight') | Out-Null
+    Write-Host "Installing mdlight icon overrides -> /koreader/icons/ ..."
     Get-ChildItem -Path $mdlightSrc -Filter '*.svg' | ForEach-Object {
-        Copy-WithBackup $_.FullName (Join-Path $Target "resources\icons\mdlight\$($_.Name)")
+        $name = $_.Name
+        # Collision check
+        if (Test-Path (Join-Path $RepoRoot "icons\$name")) {
+            Write-Host "  [!] Name collision: $name exists in BOTH icons/ and icons/mdlight/ - mdlight copy will win"
+        }
+        Copy-WithBackup $_.FullName (Join-Path $Target "icons\$name")
     }
 }
 

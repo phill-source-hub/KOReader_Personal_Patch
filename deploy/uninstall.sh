@@ -52,10 +52,13 @@ done
 for f in "$REPO_ROOT"/icons/mdlight/*.svg; do
     [[ -f "$f" ]] || continue
     name="$(basename "$f")"
-    target_file="$TARGET/resources/icons/mdlight/$name"
+    # These live in /koreader/icons/ (the override layer), not in
+    # /koreader/resources/icons/mdlight/ (the system layer).
+    # Removing them causes KOReader to fall back to its stock icons.
+    target_file="$TARGET/icons/$name"
     if [[ -f "$target_file" ]]; then
         rm -f "$target_file"
-        echo "  ✗ resources/icons/mdlight/$name"
+        echo "  ✗ icons/$name  (mdlight override)"
     fi
 done
 
